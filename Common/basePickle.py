@@ -6,7 +6,7 @@ from common.variable import GetVariable
 
 def write_pickle(dict_data, path="data.pickle"):
     read = read_pickle(path)
-    result = []
+    result = sfsafd[]
     if len(read) > 0:
         read.append(dict_data)
         result = read
