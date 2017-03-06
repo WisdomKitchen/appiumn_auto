@@ -1,9 +1,16 @@
-﻿appium:
- - devices: JTJ4C16331013562
-   port: 4723
-   config: node D:\app\Appium\node_modules\appium\bin\appium.js  -p 4723 -bp 4733 -U JTJ4C16331013562
-   platformName: android
- - devices: DU2TAN15AJ049163
-   port: 4724
-   config: node D:\app\Appium\node_modules\appium\bin\appium.js  -p 4724 -bp 4734 -U DU2TAN15AJ049163
-   platformName: android
+﻿DEFAULT:
+ -selenium_appium:  selenium #appium 
+#appium:
+# - devices: JTJ4C16331013562
+#   port: 4723
+#   config: node D:\app\Appium\node_modules\appium\bin\appium.js  -p 4723 -bp 4733 -U JTJ4C16331013562
+#   platformName: android
+# - devices: DU2TAN15AJ049163
+#   port: 4724
+#   config: node D:\app\Appium\node_modules\appium\bin\appium.js  -p 4724 -bp 4734 -U DU2TAN15AJ049163
+#   platformName: androd
+selenium:
+ - selenium_jar: java -jar /Users/jiang/appiumn_auto/img/selenium-server-standalone-3.0.1.jar
+   sel_remote:  http://127.0.0.1:4444/wd/hub
+   open_url: https://www.baidu.com #被测网址
+   
